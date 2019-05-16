@@ -1,0 +1,12 @@
+.addButton {
+    background-color: #DBDDEC;
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+    margin: 66px 70px;
+    width: 90px;
+}
+
+.addButton:focus {
+    outline: none;
+} 
