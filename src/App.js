@@ -1,13 +1,14 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Title from './components/Title';
 import Column from './components/Column';
 import AddColumnButton from './components/AddColumnButton';
 import base from './base';
 
-class App extends React.Component {
+class App extends Component {
   state = {
+    pseudo: this.props.match.params.pseudo,
     columns: {}
   };
 
@@ -20,10 +21,13 @@ class App extends React.Component {
       title: '',
       separator: '',
       base: 60,
-      boxes: {[idBox]: {
-        id: idBox,
-        left: '',
-        right: ''}}
+      boxes: {
+        [idBox]: {
+          id: idBox,
+          left: '',
+          right: '',
+        },
+      },
     };
     this.setState({ columns });
   }
@@ -88,7 +92,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.ref = base.syncState('/', {
+    this.ref = base.syncState(`/spaces/${this.state.pseudo}`, {
       context: this,
       state: 'columns'
     })

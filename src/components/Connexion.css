@@ -1,0 +1,38 @@
+.containerLogin {
+    text-align: center;
+}
+
+.titleLogin {
+    background-color: #DBDDEC;
+}
+
+.formLogin {
+    background-color: #DBDDEC;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    transform: translateY(-50%);
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    height: 160px;
+    width: 250px;
+}
+
+.buttonLogin {
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 25px;
+    height: 50px;
+    width: 150px;
+}
+
+.inputLogin {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
