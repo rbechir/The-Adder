@@ -71,7 +71,7 @@ class Connexion extends Component {
 
     render() {
         if (this.state.valid) {
-            const pseudo = this.state.tmp_pseudo.replace(/[#\.\$\[\]]/g, '');
+            const pseudo = this.state.tmp_pseudo.replace(/[#\/\.\$\[\]]/g, '');
             return (
                 <Redirect push to={`/pseudo/${pseudo}`} />
             )
