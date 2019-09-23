@@ -5,5 +5,5 @@ const NotFound = () => {
         <h1>There's nothing here. GO AWAY!!</h1>
     );
 }
- 
+
 export default NotFound;

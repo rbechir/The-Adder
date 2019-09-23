@@ -1,14 +1,14 @@
 import React from 'react';
-import './ColumnTitle.css';
+import '../css/ColumnTitle.css';
 
-const ColumnTitle = ({ id, value, onChange }) => {
+const ColumnTitle = (props) => {
     return (
         <React.Fragment>
             <input className='inputTitle'
                 type='text'
                 placeholder='Title'
-                value={value}
-                onChange={e => onChange(id, e)} />
+                value={props.value}
+                onChange={e => props.onChange(props.id, e)} />
             <br />
         </React.Fragment>
     );

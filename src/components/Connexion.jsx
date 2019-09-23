@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import bcrypt from 'bcryptjs';
 import base from '../base';
-import './Connexion.css'
+import '../css/Connexion.css'
 import Title from './Title';
 
 class Connexion extends Component {

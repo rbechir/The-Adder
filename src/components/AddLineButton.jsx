@@ -1,10 +1,8 @@
 import React from 'react';
 
-const AddLineButton = ({id, onClick, value}) => {
+const AddLineButton = (props) => {
     return (
-        <React.Fragment>
-            <button onClick={() => onClick(id)}>{value}</button>
-        </React.Fragment>
+        <button onClick={() => props.onClick(props.id)}>{props.value}</button>
     );
 }
 

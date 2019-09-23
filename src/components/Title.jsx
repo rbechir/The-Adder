@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Title = ({value}) => {
+const Title = (props) => {
     return (
-        <React.Fragment>
-            <h1>{value}</h1>
-        </React.Fragment>
+        <h1>{props.value}</h1>
     );
 }
- 
+
 export default Title;

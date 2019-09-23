@@ -7,18 +7,18 @@ const getTotal = (time, name) => {
     return (res ? res : 0);
 }
 
-const Total = ({base, separator, time}) => {
-    let total_right = getTotal(time, 'right');
-    let total_left = getTotal(time, 'left') + Math.floor(total_right / base);
-    total_right %= base;
+const Total = (props) => {
+    let total_right = getTotal(props.time, 'right');
+    let total_left = getTotal(props.time, 'left') + Math.floor(total_right / props.base);
+    total_right %= props.base;
 
     return (
         <h3>
             Total: {total_left.toString().padStart(2, '0')}
-                   {separator}
-                   {total_right.toString().padStart(2, '0')}
+            {props.separator}
+            {total_right.toString().padStart(2, '0')}
         </h3>
     );
 }
- 
+
 export default Total;

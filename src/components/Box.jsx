@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Box.css'
+import '../css/Box.css'
 
 class Box extends Component {
     handleChange = e => {

@@ -1,14 +1,12 @@
 import React from 'react';
-import './AddColumnButton.css'
+import '../css/AddColumnButton.css'
 
-const AddColumnButton = ({ onClick, value }) => {
+const AddColumnButton = (props) => {
     return (
-        <React.Fragment>
-            <button className='addButton'
-                onClick={onClick}>
-                <strong>{value}</strong>
-            </button>
-        </React.Fragment>
+        <button className='addButton'
+            onClick={props.onClick}>
+            <strong>{props.value}</strong>
+        </button>
     );
 }
 

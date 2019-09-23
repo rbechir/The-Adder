@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import Title from './components/Title';
 import Column from './components/Column';
 import AddColumnButton from './components/AddColumnButton';

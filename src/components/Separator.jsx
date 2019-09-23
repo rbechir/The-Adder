@@ -1,15 +1,13 @@
 import React from 'react';
-import './Separator.css';
+import '../css/Separator.css';
 
-const Separator = ({id, value, onChange}) => {
+const Separator = (props) => {
     return (
-        <React.Fragment>
-            <input className='inputSeparator'
-                placeholder='Separator'
-                value={value}
-                onChange={e => onChange(id, e)} />
-        </React.Fragment>
+        <input className='inputSeparator'
+            placeholder='Separator'
+            value={props.value}
+            onChange={e => props.onChange(props.id, e)} />
     );
 }
- 
+
 export default Separator;
